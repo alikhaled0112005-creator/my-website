@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أسئلة وأجوبة مادة Additive Manufacturing 1</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .sheet-icon {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: none;
+        }
+        .sheet-icon:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+        .sheet-section {
+            display: none;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+        .sheet-section.active {
+            display: block;
+        }
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #e67e22;
+            margin-top: 20px;
+        }
+        .question {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #fafafa;
+            border-right: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        .options {
+            margin: 5px 0 10px 0;
+            padding-right: 20px;
+            list-style-type: none;
+        }
+        .options li {
+            margin-bottom: 4px;
+            color: #555;
+        }
+        .answer {
+            color: #27ae60;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>أسئلة وأجوبة مقررات Additive Manufacturing 1 (MEC342)</h1>
+
+    <!-- أيقونات الشيتات الدائرية -->
+    <div class="icon-container">
+        <button class="sheet-icon" onclick="showSheet(1)">شيت 1</button>
+        <button class="sheet-icon" onclick="showSheet(2)">شيت 2</button>
+        <button class="sheet-icon" onclick="showSheet(3)">شيت 3</button>
+    </div>
+
+    <!-- محتوى شيت 1 -->
+    <div id="sheet1" class="sheet-section active">
+        <h2>شيت 1 - الأسئلة والأجوبة (جامعة المنصورة الجديدة)</h2>
+        
+        <h3>Multiple-Choice Questions</h3>
+        <div class="question">1. Additive Manufacturing (AM) generally creates an object by: <ul class="options"><li>A) Removing material from a solid block</li><li>B) Joining material, usually layer upon layer</li><li>C) Casting liquid metal in a permanent mold</li><li>D) Forging material between dies</li></ul><div class="answer">الإجابة: B) Joining material, usually layer upon layer</div></div>
+        <div class="question">2. Which term is also commonly used for Additive Manufacturing? <ul class="options"><li>A) 3D printing</li><li>B) Broaching</li><li>C) Planing</li><li>D) Honing</li></ul><div class="answer">الإجابة: A) 3D printing</div></div>
+        <div class="question">3. AM parts are commonly fabricated directly from: <ul class="options"><li>A) 2D hand sketches only</li><li>B) 3D CAD data</li><li>C) A physical master only</li><li>D) A CNC tool catalogue</li></ul><div class="answer">الإجابة: B) 3D CAD data</div></div>
+        <div class="question">4. Rapid prototyping describes creating a representation of a system or part: <ul class="options"><li>A) Only after mass production</li><li>B) Before final release or commercialization</li><li>C) Only by casting</li><li>D) Only for final products</li></ul><div class="answer">الإجابة: B) Before final release or commercialization</div></div>
+        <div class="question">5. Which process is generally subtractive? <ul class="options"><li>A) SLA</li><li>B) FDM</li><li>C) CNC machining</li><li>D) SLS</li></ul><div class="answer">الإجابة: C) CNC machining</div></div>
+        <div class="question">6. A typical AM advantage is: <ul class="options"><li>A) Mandatory expensive tooling</li><li>B) Increasing waste with complexity</li><li>C) Ability to produce complex geometry without complexity-related tooling cost</li><li>D) No need for any post-processing in every case</li></ul><div class="answer">الإجابة: C) Ability to produce complex geometry without complexity-related tooling cost</div></div>
+        <div class="question">7. Which is listed as an AM limitation in the lecture? <ul class="options"><li>A) Unlimited build size</li><li>B) All materials can be processed</li><li>C) Part size and production-series limitations</li><li>D) No possibility of porosity</li></ul><div class="answer">الإجابة: C) Part size and production-series limitations</div></div>
+        <div class="question">8. AM parts may show anisotropy particularly in the: <ul class="options"><li>A) X direction only in every process</li><li>B) Z or build direction</li><li>C) Direction of gravity only</li><li>D) Tool spindle direction</li></ul><div class="answer">الإجابة: B) Z or build direction</div></div>
+        <div class="question">9. Compared with wrought parts, AM parts are described in the lecture as generally having mechanical properties that are: <ul class="options"><li>A) Always superior</li><li>B) Generally inferior, although often superior to cast parts</li><li>C) Always identical</li><li>D) Impossible to measure</li></ul><div class="answer">الإجابة: B) Generally inferior, although often superior to cast parts</div></div>
+        <div class="question">10. Which is the correct generic AM process-chain order at the beginning? <ul class="options"><li>A) Build → CAD → STL conversion</li><li>B) CAD → STL conversion → file transfer</li><li>C) Post-process → machine setup → CAD</li><li>D) Application → build → STL conversion</li></ul><div class="answer">الإجابة: B) CAD → STL conversion → file transfer</div></div>
+        <div class="question">11. How many main steps are listed in the generic AM process chain? <ul class="options"><li>A) 4</li><li>B) 5</li><li>C) 8</li><li>D) 12</li></ul><div class="answer">الإجابة: C) 8</div></div>
+        <div class="question">12. The first step of the AM process chain is: <ul class="options"><li>A) Part removal</li><li>B) Machine setup</li><li>C) Conceptualization and CAD</li><li>D) Post-processing</li></ul><div class="answer">الإجابة: C) Conceptualization and CAD</div></div>
+        <div class="question">13. STL was derived from the term: <ul class="options"><li>A) Standard Tool Language</li><li>B) StereoLithography</li><li>C) Solid Transfer Layer</li><li>D) Surface Texture Logic</li></ul><div class="answer">الإجابة: B) StereoLithography</div></div>
+        <div class="question">14. An STL file describes a CAD model primarily in terms of its: <ul class="options"><li>A) Manufacturing cost</li><li>B) Geometry using triangular facets</li><li>C) Chemical composition</li><li>D) Mechanical test results</li></ul><div class="answer">الإجابة: B) Geometry using triangular facets</div></div>
+        <div class="question">15. STL conversion removes information such as: <ul class="options"><li>A) All surface geometry</li><li>B) Construction data and modeling history</li><li>C) The part's outer shape</li><li>D) All triangles</li></ul><div class="answer">الإجابة: B) Construction data and modeling history</div></div>
+        <div class="question">16. In an STL file, triangle surface normals help identify: <ul class="options"><li>A) The correct inside and outside of the surface</li><li>B) The material cost</li><li>C) The build time only</li><li>D) The color of the part</li></ul><div class="answer">الإجابة: A) The correct inside and outside of the surface</div></div>
+        <div class="question">17. After STL creation, a common pre-build task is to: <ul class="options"><li>A) Verify and orient the part</li><li>B) Perform tensile testing</li><li>C) Paint the final part</li><li>D) Machine all surfaces</li></ul><div class="answer">الإجابة: A) Verify and orient the part</div></div>
+        <div class="question">18. Why might a user reposition a part in an AM machine? <ul class="options"><li>A) To change the material's chemical identity</li><li>B) To locate or orient it appropriately for building</li><li>C) To eliminate the CAD model</li><li>D) To avoid converting to STL</li></ul><div class="answer">الإجابة: B) To locate or orient it appropriately for building</div></div>
+        <div class="question">19. Machine setup parameters are: <ul class="options"><li>A) Always identical for all AM machines</li><li>B) Specific to the machine or process</li><li>C) Never saved</li><li>D) Unrelated to build quality</li></ul><div class="answer">الإجابة: B) Specific to the machine or process</div></div>
+        <div class="question">20. During the build stage, AM machines commonly repeat: <ul class="options"><li>A) Layer control, material deposition, and cross-section formation</li><li>B) Casting, forging, and rolling</li><li>C) Drilling, milling, and turning</li><li>D) Polishing and painting only</li></ul><div class="answer">الإجابة: A) Layer control, material deposition, and cross-section formation</div></div>
+        <div class="question">21. Part removal and cleanup may involve: <ul class="options"><li>A) Separating the part from the build platform or excess material</li><li>B) Creating the original CAD model</li><li>C) Selecting decision weights</li><li>D) Converting the file to STL</li></ul><div class="answer">الإجابة: A) Separating the part from the build platform or excess material</div></div>
+        <div class="question">22. Post-processing usually refers to: <ul class="options"><li>A) Finishing a part for its intended application</li><li>B) The first CAD design step</li><li>C) Only slicing the STL file</li><li>D) Only transferring the file</li></ul><div class="answer">الإجابة: A) Finishing a part for its intended application</div></div>
+        <div class="question">23. Which is an example of post-processing? <ul class="options"><li>A) Surface polishing</li><li>B) Creating a CAD model</li><li>C) Generating an STL file</li><li>D) Selecting build orientation only</li></ul><div class="answer">الإجابة: A) Surface polishing</div></div>
+        <div class="question">24. Why should AM parts be checked before application? <ul class="options"><li>A) They may contain voids or have material-bonding issues</li><li>B) They always have perfect properties</li><li>C) They never need support removal</li><li>D) They cannot fail under stress</li></ul><div class="answer">الإجابة: A) They may contain voids or have material-bonding issues</div></div>
+        <div class="question">25. Which group is one of the four broad AM process categories in the lecture? <ul class="options"><li>A) Liquid polymer systems</li><li>B) Forging systems</li><li>C) Rolling systems</li><li>D) Machining systems</li></ul><div class="answer">الإجابة: A) Liquid polymer systems</div></div>
+        <div class="question">26. The four broad process categories include liquid polymer, discrete particle, molten material, and: <ul class="options"><li>A) Solid sheet systems</li><li>B) Hot forging systems</li><li>C) Subtractive systems</li><li>D) Casting sand systems</li></ul><div class="answer">الإجابة: A) Solid sheet systems</div></div>
+        <div class="question">27. Liquid-based RP systems begin with material in the: <ul class="options"><li>A) Solid block state only</li><li>B) Liquid state</li><li>C) Gas state</li><li>D) Finished-part state</li></ul><div class="answer">الإجابة: B) Liquid state</div></div>
+        <div class="question">28. Stereolithography (SLA) uses a photo-curable liquid resin that hardens when exposed to: <ul class="options"><li>A) A laser beam</li><li>B) A cutting tool</li><li>C) A roller only</li><li>D) A mechanical press</li></ul><div class="answer">الإجابة: A) A laser beam</div></div>
+        <div class="question">29. The SLA solidification mechanism is called: <ul class="options"><li>A) Photopolymerization</li><li>B) Forging</li><li>C) Electroplating</li><li>D) Sinter casting</li></ul><div class="answer">الإجابة: A) Photopolymerization</div></div>
+        <div class="question">30. In SLA, the model is built: <ul class="options"><li>A) All at once in one operation</li><li>B) Layer by layer</li><li>C) Only by removing material</li><li>D) By bonding paper sheets</li></ul><div class="answer">الإجابة: B) Layer by layer</div></div>
+        <div class="question">31. In the SLA process, the elevator table typically moves down so that: <ul class="options"><li>A) A new layer of resin can cover the previous layer</li><li>B) The laser can be removed</li><li>C) The part can be machined</li><li>D) The CAD model is deleted</li></ul><div class="answer">الإجابة: A) A new layer of resin can cover the previous layer</div></div>
+        <div class="question">32. Before building an SLA part, supports may be designed to: <ul class="options"><li>A) Stabilize the part during building</li><li>B) Increase STL file size only</li><li>C) Replace the resin</li><li>D) Remove the need for CAD</li></ul><div class="answer">الإجابة: A) Stabilize the part during building</div></div>
+        <div class="question">33. Which is a stated application of SLA? <ul class="options"><li>A) Patterns for investment casting</li><li>B) Large-scale forging dies only</li><li>C) Road construction</li><li>D) Ore extraction</li></ul><div class="answer">الإجابة: A) Patterns for investment casting</div></div>
+        <div class="question">34. Solid Ground Curing (SGC) uses liquid photopolymer resin that solidifies under: <ul class="options"><li>A) UV light</li><li>B) Water pressure</li><li>C) A cutting blade</li><li>D) Room lighting only</li></ul><div class="answer">الإجابة: A) UV light</div></div>
+        <div class="question">35. One SGC advantage described is that: <ul class="options"><li>A) Wax can provide continuous support, reducing the need for external supports</li><li>B) It never uses resin</li><li>C) It does not build in layers</li><li>D) It requires no data preparation</li></ul><div class="answer">الإجابة: A) Wax can provide continuous support, reducing the need for external supports</div></div>
+        <div class="question">36. Which are the three main SGC process stages listed in the lecture? <ul class="options"><li>A) Data preparation, mask generation, model making</li><li>B) Casting, forging, rolling</li><li>C) CAD, machining, welding</li><li>D) Powdering, turning, polishing</li></ul><div class="answer">الإجابة: A) Data preparation, mask generation, model making</div></div>
+        <div class="question">37. In SGC, melted wax is spread into cavities mainly to: <ul class="options"><li>A) Provide support and fill the removed-resin regions</li><li>B) Act as the laser source</li><li>C) Create the STL file</li><li>D) Measure hardness</li></ul><div class="answer">الإجابة: A) Provide support and fill the removed-resin regions</div></div>
+        <div class="question">38. The SOUP system is based on: <ul class="options"><li>A) Laser lithography technology</li><li>B) Conventional milling</li><li>C) Sand casting</li><li>D) Hot rolling</li></ul><div class="answer">الإجابة: A) Laser lithography technology</div></div>
+        <div class="question">39. Which factor is listed as influencing SOUP performance? <ul class="options"><li>A) Laser spot diameter</li><li>B) Wheelbase of the machine</li><li>C) Casting flask size</li><li>D) Drill-point angle</li></ul><div class="answer">الإجابة: A) Laser spot diameter</div></div>
+
+        <h3>True or False</h3>
+        <div class="question">1. AM typically creates objects by joining material layer upon layer. <div class="answer">الإجابة: True</div></div>
+        <div class="question">2. CNC machining is an example of additive manufacturing. <div class="answer">الإجابة: False</div></div>
+        <div class="question">3. AM can produce complex geometries without additional complexity-related tooling costs. <div class="answer">الإجابة: True</div></div>
+        <div class="question">4. Every AM process can manufacture every material. <div class="answer">الإجابة: False</div></div>
+        <div class="question">5. AM parts may contain internal voids or porosity. <div class="answer">الإجابة: True</div></div>
+        <div class="question">6. STL files approximate model surfaces using triangular facets. <div class="answer">الإجابة: True</div></div>
+        <div class="question">7. STL conversion always preserves all CAD construction history. <div class="answer">الإجابة: False</div></div>
+        <div class="question">8. The generic AM process chain includes machine setup and post-processing. <div class="answer">الإجابة: True</div></div>
+        <div class="question">9. The build stage is generally repeated layer by layer until completion or material runs out. <div class="answer">الإجابة: True</div></div>
+        <div class="question">10. All AM parts are ready for use immediately after leaving the machine. <div class="answer">الإجابة: False</div></div>
+        <div class="question">11. SLA uses photo-curable liquid resin. <div class="answer">الإجابة: True</div></div>
+        <div class="question">12. SLA solidifies resin through laser exposure and photopolymerization. <div class="answer">الإجابة: True</div></div>
+        <div class="question">13. SGC uses UV light to harden selected regions of resin. <div class="answer">الإجابة: True</div></div>
+        <div class="question">14. SGC's wax can act as a support material. <div class="answer">الإجابة: True</div></div>
+        <div class="question">15. SLS is a filament extrusion process. <div class="answer">الإجابة: False</div></div>
+
+        <h3>Fill in the Blanks</h3>
+        <div class="question">1. AM is commonly known as __________ printing. <div class="answer">الإجابة: 3D</div></div>
+        <div class="question">2. AM objects are commonly built layer upon __________. <div class="answer">الإجابة: layer</div></div>
+        <div class="question">3. The first AM process-chain step is conceptualization and __________. <div class="answer">الإجابة: CAD</div></div>
+        <div class="question">4. The file format commonly used to approximate a CAD surface with triangular facets is __________. <div class="answer">الإجابة: STL</div></div>
+        <div class="question">5. The eight-step process chain ends with the part's __________. <div class="answer">الإجابة: application</div></div>
+        <div class="question">6. SLA uses a photo-curable liquid __________. <div class="answer">الإجابة: resin</div></div>
+        <div class="question">7. The SLA hardening mechanism is called __________. <div class="answer">الإجابة: photopolymerization</div></div>
+        <div class="question">8. SGC uses __________ light to solidify resin. <div class="answer">الإجابة: UV</div></div>
+        <div class="question">9. SLS uses powdered material and a __________ beam. <div class="answer">الإجابة: laser</div></div>
+        <div class="question">10. FDM material is commonly supplied on __________. <div class="answer">الإجابة: spools (filament)</div></div>
+
+        <h3>Short-Answer Questions</h3>
+        <div class="question">1. Define Additive Manufacturing in your own words using the lecture's description. <div class="answer">الإجابة: صناعة المنتجات بإضافة المواد طبقة فوق أخرى بناءً على بيانات نموذج ثلاثي الأبعاد (3D CAD).</div></div>
+        <div class="question">2. Define a prototype and state the purpose of a prototype. <div class="answer">الإجابة: نموذج أولي يتم إنشاؤه لتقييم وتجربة التصميم والتحقق من الشكل والوظيفة قبل الإنتاج التجاري الواسع.</div></div>
+        <div class="question">3. List the three aspects used to describe types of prototypes. <div class="answer">الإجابة: الشكل، الوظيفة، والمادة (Form, Fit, and Function).</div></div>
+        <div class="question">4. Write the eight steps of the generic AM process chain in the correct order. <div class="answer">الإجابة: 1. CAD, 2. STL, 3. File Transfer & Manipulation, 4. Machine Setup, 5. Build, 6. Removal & Cleanup, 7. Post-processing, 8. Application.</div></div>
+        <div class="question">5. Explain why a CAD model is converted to STL before many AM builds. <div class="answer">الإجابة: لأن صيغة STL تُبسط الأسطح المعقدة إلى مثلثات مسطحة تفهمها برامج التقسيم (Slicing) وتتعامل معها ماكينات التصنيع الإضافي.</div></div>
+        <div class="question">6. State two problems that may occur in an STL file and explain why they matter. <div class="answer">الإجابة: الفجوات (Gaps) واتجاهات الأسطح غير الصحيحة (Normal orientation)، وتؤدي لفشل طباعة الجزء وتشويه هندسته.</div></div>
+        <div class="question">7. Describe the purpose of part orientation and positioning before a build. <div class="answer">الإجابة: لتحسين جودة السطح، تقليل الداعمات (Supports)، وتعبئة مساحة غرفة الطباعة بالشكل الأمثل.</div></div>
+        <div class="question">8. Explain the difference between part removal/cleanup and post-processing. <div class="answer">الإجابة: الإزالة والتنظيف تعني فصل الجزء عن المنصة وإزالة الداعمات الأولية، بينما المعالجة اللاحقة (Post-processing) تشمل الصنفرة، الطلاء، والمعالجة الحرارية لتحسين الخصائص والشكل النهائي.</div></div>
+        <div class="question">9. List the four broad categories of AM processes presented in the lecture. <div class="answer">الإجابة: 1. السوائل البوليمرية (Liquid polymer)، 2. الجسيمات الدقيقة (Discrete particle)، 3. المواد المنصهرة (Molten material)، 4. الألواح الصلبة (Solid sheet).</div></div>
+        <div class="question">10. Explain the principle of SLA and describe how one layer is formed. <div class="answer">الإجابة: تعتمد على تسليط شعاع ليرزر فوق سطح راتنج سائل حساس للضوء (Photopolymer) ليقوم بتصليد مسار طبقة معينة، ثم ينخفض سطح المنصة لطبقة جديدة.</div></div>
+    </div>
+
+    <!-- محتوى شيت 2 (شامل وكامل) -->
+    <div id="sheet2" class="sheet-section">
+        <h2>شيت 2 - الأسئلة والأجوبة</h2>
+        
+        <h3>Multiple-Choice Questions</h3>
+        <div class="question">1. Discrete particles used in AM are commonly: <ul class="options"><li>A) Powders with controlled size and shape</li><li>B) Only large solid bars</li><li>C) Liquid resin only</li><li>D) Paper sheets only</li></ul><div class="answer">الإجابة: A) Powders with controlled size and shape</div></div>
+        <div class="question">2. In powder-based processes, the laser provides energy to: <ul class="options"><li>A) Heat and bond powder particles in selected regions</li><li>B) Cut every part from a sheet</li><li>C) Wash support material away</li><li>D) Polish the surface</li></ul><div class="answer">الإجابة: A) Heat and bond powder particles in selected regions</div></div>
+        <div class="question">3. Selective Laser Sintering (SLS) builds parts using: <ul class="options"><li>A) Powder and a laser</li><li>B) Liquid resin and UV exposure only</li><li>C) Paper and heat-activated adhesive only</li><li>D) A filament extruded through a nozzle</li></ul><div class="answer">الإجابة: A) Powder and a laser</div></div>
+        <div class="question">4. In SLS, the next powder layer is commonly spread using a: <ul class="options"><li>A) Roller</li><li>B) Hammer</li><li>C) Drill</li><li>D) Welding torch</li></ul><div class="answer">الإجابة: A) Roller</div></div>
+        <div class="question">5. In SLS, surrounding unsintered powder can: <ul class="options"><li>A) Provide support to the part</li><li>B) Always become the final part</li><li>C) Replace the CAD data</li><li>D) Prevent any layer formation</li></ul><div class="answer">الإجابة: A) Provide support to the part</div></div>
+        <div class="question">6. SLS parts are built by repeatedly: <ul class="options"><li>A) Depositing powder, scanning the cross-section, and adding the next layer</li><li>B) Pouring metal into a mold</li><li>C) Cutting paper and bonding it only</li><li>D) Extruding filament through a nozzle</li></ul><div class="answer">الإجابة: A) Depositing powder, scanning the cross-section, and adding the next layer</div></div>
+        <div class="question">7. Molten material systems commonly use a heated material that flows through a: <ul class="options"><li>A) Delivery system or nozzle</li><li>B) Casting flask only</li><li>C) Grinding wheel</li><li>D) Vacuum furnace only</li></ul><div class="answer">الإجابة: A) Delivery system or nozzle</div></div>
+        <div class="question">8. Fused Deposition Modeling (FDM) is associated in the lecture with: <ul class="options"><li>A) Stratasys</li><li>B) Cubital only</li><li>C) Helisys only</li><li>D) Wohler only</li></ul><div class="answer">الإجابة: A) Stratasys</div></div>
+        <div class="question">9. FDM feedstock is commonly supplied as: <ul class="options"><li>A) Filament on spools</li><li>B) Liquid resin in a vat only</li><li>C) Loose sand only</li><li>D) Continuous paper sheets only</li></ul><div class="answer">الإجابة: A) Filament on spools</div></div>
+        <div class="question">10. In FDM, the filament is heated to a: <ul class="options"><li>A) Semi-liquid state</li><li>B) Fully gaseous state</li><li>C) Cold brittle state</li><li>D) Chemically inert powder state</li></ul><div class="answer">الإجابة: A) Semi-liquid state</div></div>
+        <div class="question">11. FDM forms the model by depositing material: <ul class="options"><li>A) In thin layers along generated tool paths</li><li>B) By removing chips from a block</li><li>C) By casting the full shape in one pour</li><li>D) By bonding only paper sheets</li></ul><div class="answer">الإجابة: A) In thin layers along generated tool paths</div></div>
+        <div class="question">12. In a dual-tip FDM setup, secondary or release material is used to make: <ul class="options"><li>A) Support structures</li><li>B) The CAD model</li><li>C) The laser beam</li><li>D) The machine frame</li></ul><div class="answer">الإجابة: A) Support structures</div></div>
+        <div class="question">13. The FDM release material may be removed after building by: <ul class="options"><li>A) Washing it away</li><li>B) Turning the part on a lathe only</li><li>C) Melting the whole model</li><li>D) Converting it back to STL</li></ul><div class="answer">الإجابة: A) Washing it away</div></div>
+        <div class="question">14. Laminated Object Manufacturing (LOM) is classified as a: <ul class="options"><li>A) Solid sheet system</li><li>B) Liquid polymer system</li><li>C) Discrete particle system</li><li>D) Subtractive-only system</li></ul><div class="answer">الإجابة: A) Solid sheet system</div></div>
+        <div class="question">15. LOM builds parts by: <ul class="options"><li>A) Laminating sheet layers and cutting each layer's contour</li><li>B) Sintering loose powder with a laser</li><li>C) Curing resin with a laser</li><li>D) Extruding filament through a nozzle</li></ul><div class="answer">الإجابة: A) Laminating sheet layers and cutting each layer's contour</div></div>
+        <div class="question">16. In LOM, excess material may be cross-hatched so it can: <ul class="options"><li>A) Be removed and can support the part during building</li><li>B) Become the laser source</li><li>C) Create the CAD file</li><li>D) Replace all bonding</li></ul><div class="answer">الإجابة: A) Be removed and can support the part during building</div></div>
+        <div class="question">17. Which is a post-processing category in the lecture? <ul class="options"><li>A) Accuracy improvement</li><li>B) STL conversion</li><li>C) CAD conceptualization</li><li>D) Machine file transfer</li></ul><div class="answer">الإجابة: A) Accuracy improvement</div></div>
+        <div class="question">18. A common AM surface-texture feature is: <ul class="options"><li>A) Stair-stepping</li><li>B) Perfect mirror finish in all cases</li><li>C) Zero surface variation</li><li>D) Only casting flash</li></ul><div class="answer">الإجابة: A) Stair-stepping</div></div>
+        <div class="question">19. For a matte surface finish, the lecture suggests: <ul class="options"><li>A) Bead blasting</li><li>B) Only chrome plating</li><li>C) Increasing STL file size</li><li>D) Adding more CAD history</li></ul><div class="answer">الإجابة: A) Bead blasting</div></div>
+        <div class="question">20. For a smooth or polished finish, the lecture mentions: <ul class="options"><li>A) Wet/dry sanding and hand polishing</li><li>B) Powder deposition only</li><li>C) Mask generation only</li><li>D) Changing the decision weights</li></ul><div class="answer">الإجابة: A) Wet/dry sanding and hand polishing</div></div>
+        <div class="question">21. Applying a coating or sealant before sanding may help: <ul class="options"><li>A) Seal porosity and smooth stair-step effects</li><li>B) Increase the number of CAD triangles</li><li>C) Eliminate the build stage</li><li>D) Make the part infinitely accurate</li></ul><div class="answer">الإجابة: A) Seal porosity and smooth stair-step effects</div></div>
+        <div class="question">22. According to the lecture, larger build volume and faster build speed typically tend to produce: <ul class="options"><li>A) Worse accuracy for a particular process</li><li>B) Perfect accuracy</li><li>C) No change under any condition</li><li>D) A guaranteed lower cost only</li></ul><div class="answer">الإجابة: A) Worse accuracy for a particular process</div></div>
+        <div class="question">23. When an AM part is used as a casting pattern, pattern accuracy and finish affect: <ul class="options"><li>A) The final part's accuracy and surface finish</li><li>B) Only the CAD screen color</li><li>C) Only the machine's purchase price</li><li>D) The number of decision alternatives</li></ul><div class="answer">الإجابة: A) The final part's accuracy and surface finish</div></div>
+        <div class="question">24. Pattern scaling may be needed to compensate for: <ul class="options"><li>A) Shrinkage during replication</li><li>B) Laser wavelength only</li><li>C) The number of STL triangles only</li><li>D) The color of the resin</li></ul><div class="answer">الإجابة: A) Shrinkage during replication</div></div>
+        <div class="question">25. Chrome plating is described as an aesthetic enhancement that can also improve: <ul class="options"><li>A) Strength and wear resistance</li><li>B) CAD model quality</li><li>C) STL file orientation</li><li>D) Layer slicing speed</li></ul><div class="answer">الإجابة: A) Strength and wear resistance</div></div>
+        <div class="question">26. Non-thermal property enhancement may involve: <ul class="options"><li>A) Infiltrating porosity with a higher-strength material</li><li>B) Heating all parts to melting point</li><li>C) Removing the CAD model</li><li>D) Using a larger build platform only</li></ul><div class="answer">الإجابة: A) Infiltrating porosity with a higher-strength material</div></div>
+        <div class="question">27. Thermal processing of metal AM parts may be used to: <ul class="options"><li>A) Develop desired microstructures or relieve residual stresses</li><li>B) Generate STL triangles</li><li>C) Remove the need for material selection</li><li>D) Increase surface porosity intentionally</li></ul><div class="answer">الإجابة: A) Develop desired microstructures or relieve residual stresses</div></div>
+        <div class="question">28. Which is a part-selection consideration listed in the lecture? <ul class="options"><li>A) Material suitability</li><li>B) Fabrication cost and time</li><li>C) Surface finish and accuracy</li><li>D) All of the above</li></ul><div class="answer">الإجابة: D) All of the above</div></div>
+        <div class="question">29. Decision theory includes which three elements? <ul class="options"><li>A) Options, expectations, preferences</li><li>B) CAD, STL, laser</li><li>C) Powder, resin, sheet</li><li>D) Build, polish, paint</li></ul><div class="answer">الإجابة: A) Options, expectations, preferences</div></div>
+        <div class="question">30. In a selection decision support problem, alternatives are evaluated against: <ul class="options"><li>A) Attributes or criteria</li><li>B) Only their color</li><li>C) Only their manufacturing date</li><li>D) Only the CAD software name</li></ul><div class="answer">الإجابة: A) Attributes or criteria</div></div>
+        <div class="question">31. The s-DSP approach includes identifying attributes, rating alternatives, and then: <ul class="options"><li>A) Ranking the AM methods</li><li>B) Deleting all alternatives</li><li>C) Skipping user preferences</li><li>D) Choosing the most expensive machine automatically</li></ul><div class="answer">الإجابة: A) Ranking the AM methods</div></div>
+        <div class="question">32. Which is one of the seven attributes in the caster-wheel selection example? <ul class="options"><li>A) Ultimate tensile strength</li><li>B) Fuel octane number</li><li>C) Engine displacement</li><li>D) Gear ratio</li></ul><div class="answer">الإجابة: A) Ultimate tensile strength</div></div>
+        <div class="question">33. Detail capability refers to: <ul class="options"><li>A) The smallest feature size a technology can make</li><li>B) The maximum part temperature only</li><li>C) The cost of CAD software</li><li>D) The number of operators</li></ul><div class="answer">الإجابة: A) The smallest feature size a technology can make</div></div>
+        <div class="question">34. Geometric complexity is used in the example to refer partly to the ability to produce: <ul class="options"><li>A) Overhangs and complex parts</li><li>B) Only flat plates</li><li>C) Only circular holes</li><li>D) Only simple cubes</li></ul><div class="answer">الإجابة: A) Overhangs and complex parts</div></div>
+        <div class="question">35. Build time in the selection example excludes: <ul class="options"><li>A) Post-processing steps</li><li>B) The build itself</li><li>C) All machine time</li><li>D) Material deposition</li></ul><div class="answer">الإجابة: A) Post-processing steps</div></div>
+        <div class="question">36. Part cost includes manufacturing, material, machine, and: <ul class="options"><li>A) Operation costs</li><li>B) Only paint costs</li><li>C) Only shipping labels</li><li>D) Only CAD licensing</li></ul><div class="answer">الإجابة: A) Operation costs</div></div>
+        <div class="question">37. The lecture's selection example shows that changing attribute weights can: <ul class="options"><li>A) Change the ranking of alternatives</li><li>B) Never affect the result</li><li>C) Remove all uncertainty</li><li>D) Make all processes identical</li></ul><div class="answer">الإجابة: A) Change the ranking of alternatives</div></div>
+        <div class="question">38. If customization introduces geometric uncertainty, the selection process should: <ul class="options"><li>A) Account for the uncertainty before choosing a process</li><li>B) Ignore geometry entirely</li><li>C) Assume every part is identical</li><li>D) Choose based only on color</li></ul><div class="answer">الإجابة: A) Account for the uncertainty before choosing a process</div></div>
+
+        <h3>True or False</h3>
+        <div class="question">1. In SLS, surrounding loose powder can support the part. <div class="answer">الإجابة: True</div></div>
+        <div class="question">2. FDM uses a filament that is heated and extruded through a nozzle. <div class="answer">الإجابة: True</div></div>
+        <div class="question">3. FDM support material is always identical to the build material. <div class="answer">الإجابة: False</div></div>
+        <div class="question">4. LOM uses bonded sheet-form material and cuts layer contours. <div class="answer">الإجابة: True</div></div>
+        <div class="question">5. Post-processing can improve surface texture, accuracy, and aesthetics. <div class="answer">الإجابة: True</div></div>
+        <div class="question">6. Bead blasting can be used when a matte finish is desired. <div class="answer">الإجابة: True</div></div>
+        <div class="question">7. Sanding and polishing can be used to obtain a smoother finish. <div class="answer">الإجابة: True</div></div>
+        <div class="question">8. The surface finish of a casting pattern has no effect on the final cast part. <div class="answer">الإجابة: False</div></div>
+        <div class="question">9. Thermal treatment can help relieve residual stresses in metal AM parts. <div class="answer">الإجابة: True</div></div>
+        <div class="question">10. Decision theory includes options, expectations, and preferences. <div class="answer">الإجابة: True</div></div>
+        <div class="question">11. Process selection should consider cost, time, material, accuracy, and mechanical properties. <div class="answer">الإجابة: True</div></div>
+        <div class="question">12. The s-DSP method evaluates alternatives relative to attributes. <div class="answer">الإجابة: True</div></div>
+        <div class="question">13. All attribute weights must be unequal in a selection problem. <div class="answer">الإجابة: False</div></div>
+        <div class="question">14. A faster build speed always guarantees better accuracy. <div class="answer">الإجابة: False</div></div>
+        <div class="question">15. AM is particularly useful for visual aids, functional models, tooling patterns, and some direct manufacturing. <div class="answer">الإجابة: True</div></div>
+
+        <h3>Fill in the Blanks</h3>
+        <div class="question">1. In FDM, material passes through an extrusion __________. <div class="answer">الإجابة: nozzle</div></div>
+        <div class="question">2. LOM stands for Laminated Object __________. <div class="answer">الإجابة: Manufacturing</div></div>
+        <div class="question">3. The four broad AM categories include liquid polymer, discrete particle, molten material, and solid __________ systems. <div class="answer">الإجابة: sheet</div></div>
+        <div class="question">4. Surface texture may include stair-steps, powder adhesion, and support-removal __________. <div class="answer">الإجابة: artifacts (or marks)</div></div>
+        <div class="question">5. A matte surface finish may be produced by bead __________. <div class="answer">الإجابة: blasting</div></div>
+        <div class="question">6. Wet or dry sanding and hand polishing can improve surface __________. <div class="answer">الإجابة: finish</div></div>
+        <div class="question">7. A pattern may need to be scaled to compensate for __________ during replication. <div class="answer">الإجابة: shrinkage</div></div>
+        <div class="question">8. Non-thermal enhancement may involve infiltrating porosity with a higher-strength __________. <div class="answer">الإجابة: material</div></div>
+        <div class="question">9. Thermal processing can relieve residual __________. <div class="answer">الإجابة: stresses</div></div>
+        <div class="question">10. Decision theory includes options, expectations, and __________. <div class="answer">الإجابة: preferences</div></div>
+    </div>
+
+    <!-- محتوى شيت 3 (شامل وكامل) -->
+    <div id="sheet3" class="sheet-section">
+        <h2>شيت 3 - الأسئلة والأجوبة</h2>
+        
+        <h3>Multiple-Choice Questions</h3>
+        <div class="question">1. Which manufacturing approach typically removes material from a larger workpiece? <ul class="options"><li>A) Additive manufacturing</li><li>B) Subtractive manufacturing</li><li>C) Layer bonding only</li><li>D) Photopolymerization</li></ul><div class="answer">الإجابة: B) Subtractive manufacturing</div></div>
+        <div class="question">2. Which comparison is most consistent with the lecture's material-use illustration? <ul class="options"><li>A) Subtractive processes may generate waste as material is removed</li><li>B) AM always consumes more raw material than CNC</li><li>C) CNC creates parts by adding powder layers</li><li>D) Neither process changes the starting material</li></ul><div class="answer">الإجابة: A) Subtractive processes may generate waste as material is removed</div></div>
+        <div class="question">3. Which item is explicitly listed as a comparison dimension between AM and CNC machining? <ul class="options"><li>A) Programming</li><li>B) Astrology</li><li>C) Fuel octane</li><li>D) Engine displacement</li></ul><div class="answer">الإجابة: A) Programming</div></div>
+        <div class="question">4. Which set contains only comparison dimensions named in the lecture? <ul class="options"><li>A) Materials, speed, ease of use</li><li>B) Rainfall, humidity, wind</li><li>C) Fuel, torque, gear ratio</li><li>D) Color, taste, smell</li></ul><div class="answer">الإجابة: A) Materials, speed, ease of use</div></div>
+        <div class="question">5. When comparing AM with CNC, geometric complexity should be considered alongside: <ul class="options"><li>A) Accuracy and size limitations</li><li>B) Only the machine color</li><li>C) Only operator age</li><li>D) Only packaging design</li></ul><div class="answer">الإجابة: A) Accuracy and size limitations</div></div>
+        <div class="question">6. Which statement best reflects the lecture's point about AM tooling? <ul class="options"><li>A) AM can reduce the need for expensive part-specific tooling</li><li>B) AM always requires a dedicated die for each part</li><li>C) AM cannot make replacement parts</li><li>D) Tooling cost is always the same for every process</li></ul><div class="answer">الإجابة: A) AM can reduce the need for expensive part-specific tooling</div></div>
+        <div class="question">7. Which term in the lecture is associated with digital fabrication and digital mock-up? <ul class="options"><li>A) Digital manufacturing terminology</li><li>B) Forging terminology</li><li>C) Heat-treatment terminology</li><li>D) Casting-sand terminology</li></ul><div class="answer">الإجابة: A) Digital manufacturing terminology</div></div>
+        <div class="question">8. Which term is listed among the alternative names or related terms for AM? <ul class="options"><li>A) Additive Layer Manufacturing</li><li>B) Deep drawing</li><li>C) Broaching</li><li>D) Hobbing</li></ul><div class="answer">الإجابة: A) Additive Layer Manufacturing</div></div>
+        <div class="question">9. The lecture describes AM as making physical objects directly from: <ul class="options"><li>A) 3D-CAD data</li><li>B) Only 2D photographs</li><li>C) A mold cavity only</li><li>D) A manually carved master only</li></ul><div class="answer">الإجابة: A) 3D-CAD data</div></div>
+        <div class="question">10. Which is the most appropriate reason to inspect the STL after conversion? <ul class="options"><li>A) Errors can prevent correct building and may be difficult to notice in complex geometry</li><li>B) The STL stores the full CAD feature history</li><li>C) The STL automatically guarantees correct material properties</li><li>D) STL inspection replaces machine setup</li></ul><div class="answer">الإجابة: A) Errors can prevent correct building and may be difficult to notice in complex geometry</div></div>
+        <div class="question">11. An STL surface is represented by a collection of: <ul class="options"><li>A) Triangular facets</li><li>B) Cylindrical gears</li><li>C) Bezier tool holders only</li><li>D) Hexagonal bolts</li></ul><div class="answer">الإجابة: A) Triangular facets</div></div>
+        <div class="question">12. In STL conversion, reducing the triangle size generally helps the surface: <ul class="options"><li>A) Appear less visibly faceted</li><li>B) Lose its overall geometry entirely</li><li>C) Store more CAD construction history</li><li>D) Specify the machine's operating temperature</li></ul><div class="answer">الإجابة: A) Appear less visibly faceted</div></div>
+        <div class="question">13. Which STL issue relates to identifying the inside and outside of a surface? <ul class="options"><li>A) Incorrect surface-normal direction</li><li>B) Incorrect part name</li><li>C) Wrong screen brightness</li><li>D) Missing operator signature</li></ul><div class="answer">الإجابة: A) Incorrect surface-normal direction</div></div>
+        <div class="question">14. A triangle's surface normal should indicate: <ul class="options"><li>A) Which side is inside and which side is outside</li><li>B) The required operator shift</li><li>C) The part's color</li><li>D) The material supplier</li></ul><div class="answer">الإجابة: A) Which side is inside and which side is outside</div></div>
+        <div class="question">15. When an STL file has a defect that could prevent building, the lecture mentions using: <ul class="options"><li>A) STL file repair software</li><li>B) A lathe only</li><li>C) A hardness tester</li><li>D) A paint booth</li></ul><div class="answer">الإجابة: A) STL file repair software</div></div>
+        <div class="question">16. Why can errors in complex STL geometry be hard to detect? <ul class="options"><li>A) They may be difficult to see in the CAD model or generated STL data</li><li>B) Complex geometry has no surfaces</li><li>C) STL files contain no triangles</li><li>D) All errors are automatically printed in large text</li></ul><div class="answer">الإجابة: A) They may be difficult to see in the CAD model or generated STL data</div></div>
+        <div class="question">17. Which task belongs to STL transfer/manipulation rather than initial CAD modeling? <ul class="options"><li>A) Repositioning the part within the build area</li><li>B) Creating the original concept</li><li>C) Choosing the product's market price</li><li>D) Testing final tensile strength</li></ul><div class="answer">الإجابة: A) Repositioning the part within the build area</div></div>
+        <div class="question">18. Why might several STL files be arranged in one build? <ul class="options"><li>A) More than one part can be built in the machine at a time</li><li>B) The machine requires a separate build for every triangle</li><li>C) STL files cannot contain geometry</li><li>D) To avoid using machine setup parameters</li></ul><div class="answer">الإجابة: A) More than one part can be built in the machine at a time</div></div>
+        <div class="question">19. An operator copies one STL model several times in the build area. This is an example of: <ul class="options"><li>A) Arranging multiple instances for one build</li><li>B) Thermal stress relief</li><li>C) CNC tool sharpening</li><li>D) Resin photopolymerization</li></ul><div class="answer">الإجابة: A) Arranging multiple instances for one build</div></div>
+        <div class="question">20. Machine setup parameters may vary according to: <ul class="options"><li>A) The machine or process</li><li>B) The student's section number</li><li>C) The final part's sales brochure</li><li>D) The number of words in the CAD file</li></ul><div class="answer">الإجابة: A) The machine or process</div></div>
+        <div class="question">21. Why may default settings or saved setup files be useful? <ul class="options"><li>A) They can speed up setup and help prevent mistakes</li><li>B) They remove the need for any build preparation</li><li>C) They repair every STL automatically</li><li>D) They guarantee zero post-processing</li></ul><div class="answer">الإجابة: A) They can speed up setup and help prevent mistakes</div></div>
+        <div class="question">22. An incorrect machine setup may still produce a part, according to the lecture. What is the key implication? <ul class="options"><li>A) A completed build does not by itself prove the setup was correct</li><li>B) Any produced part must be dimensionally perfect</li><li>C) Setup parameters are unnecessary</li><li>D) The part will always be rejected before building</li></ul><div class="answer">الإجابة: A) A completed build does not by itself prove the setup was correct</div></div>
+        <div class="question">23. Which sequence best describes the repeated build activity? <ul class="options"><li>A) Platform/layer control, material deposition, cross-section formation</li><li>B) Casting, rolling, forging</li><li>C) Painting, packaging, shipping</li><li>D) Drilling, tapping, broaching</li></ul><div class="answer">الإجابة: A) Platform/layer control, material deposition, cross-section formation</div></div>
+        <div class="question">24. The machine-controlled build phase begins after: <ul class="options"><li>A) The earlier preparation tasks have been completed</li><li>B) The final part has been used</li><li>C) All post-processing is complete</li><li>D) The product has been sold</li></ul><div class="answer">الإجابة: A) The earlier preparation tasks have been completed</div></div>
+        <div class="question">25. The build cycle continues until: <ul class="options"><li>A) The build is complete or source material runs out</li><li>B) The operator changes the CAD color</li><li>C) The STL file becomes a solid block</li><li>D) The part has been marketed</li></ul><div class="answer">الإجابة: A) The build is complete or source material runs out</div></div>
+        <div class="question">26. Which task is most directly associated with part removal and cleanup? <ul class="options"><li>A) Separating the part from its build platform or surrounding material</li><li>B) Setting up the original CAD model</li><li>C) Creating triangle facets</li><li>D) Ranking manufacturing technologies</li></ul><div class="answer">الإجابة: A) Separating the part from its build platform or surrounding material</div></div>
+        <div class="question">27. Why may support material need separate removal? <ul class="options"><li>A) Some AM processes use secondary material in addition to the part material</li><li>B) All supports are part of the final component</li><li>C) Support material is always the same as the build platform</li><li>D) Support removal creates the STL file</li></ul><div class="answer">الإجابة: A) Some AM processes use secondary material in addition to the part material</div></div>
+        <div class="question">28. Which activity is explicitly given as a possible post-processing operation? <ul class="options"><li>A) Applying coatings</li><li>B) Creating CAD geometry</li><li>C) Transferring the STL file</li><li>D) Setting the build orientation</li></ul><div class="answer">الإجابة: A) Applying coatings</div></div>
+        <div class="question">29. A finished-looking AM component contains internal voids. The lecture warns these may: <ul class="options"><li>A) Become a source of failure under mechanical stress</li><li>B) Guarantee better strength</li><li>C) Remove the need for testing</li><li>D) Always be visible on the outer surface</li></ul><div class="answer">الإجابة: A) Become a source of failure under mechanical stress</div></div>
+        <div class="question">30. Why might an AM component fail to match standard material specifications? <ul class="options"><li>A) Voids, degradation, or suboptimal bonding/crystallization may occur</li><li>B) All AM materials are chemically identical</li><li>C) The CAD model determines all mechanical properties exactly</li><li>D) Post-processing always removes every defect</li></ul><div class="answer">الإجابة: A) Voids, degradation, or suboptimal bonding/crystallization may occur</div></div>
+        <div class="question">31. The lecture places the first commercial laser in which year? <ul class="options"><li>A) 1960</li><li>B) 1975</li><li>C) 1985</li><li>D) 2005</li></ul><div class="answer">الإجابة: A) 1960</div></div>
+        <div class="question">32. Which event is also shown in the lecture's AM evolution timeline? <ul class="options"><li>A) First commercial robot in 1961</li><li>B) First polymer printer in 1800</li><li>C) First CNC machine in 1500</li><li>D) First 3D printer in 2025</li></ul><div class="answer">الإجابة: A) First commercial robot in 1961</div></div>
+        <div class="question">33. The timeline refers to an early version of: <ul class="options"><li>A) Computer-Aided Design (CAD)</li><li>B) Selective Laser Sintering (SLS)</li><li>C) Fused Deposition Modeling (FDM)</li><li>D) Electron Beam Melting (EBM)</li></ul><div class="answer">الإجابة: A) Computer-Aided Design (CAD)</div></div>
+        <div class="question">34. The lecture identifies which technology as the first commercial system based on liquid photopolymers? <ul class="options"><li>A) Stereolithography</li><li>B) Laminated Object Manufacturing</li><li>C) CNC milling</li><li>D) Hot forging</li></ul><div class="answer">الإجابة: A) Stereolithography</div></div>
+        <div class="question">35. Which family includes systems that solidify a liquid polymer? <ul class="options"><li>A) Liquid polymer systems</li><li>B) Solid sheet systems only</li><li>C) Subtractive systems</li><li>D) Mechanical forming systems</li></ul><div class="answer">الإجابة: A) Liquid polymer systems</div></div>
+        <div class="question">36. In the classification diagram, SLS is associated with: <ul class="options"><li>A) Laser-based processing of discrete particles</li><li>B) Bonding paper sheets only</li><li>C) Removing material with a milling cutter</li><li>D) Extruding only liquid photopolymer</li></ul><div class="answer">الإجابة: A) Laser-based processing of discrete particles</div></div>
+        <div class="question">37. For powder-based systems, the lecture says particle size and shape should be: <ul class="options"><li>A) Uniform, with a narrow size distribution</li><li>B) Random with no control</li><li>C) As large as possible in every case</li><li>D) Irrelevant to process behavior</li></ul><div class="answer">الإجابة: A) Uniform, with a narrow size distribution</div></div>
+        <div class="question">38. Why can making powder particles extremely small cause problems? <ul class="options"><li>A) Distribution and dispersion become harder to control</li><li>B) The particles become CAD surfaces</li><li>C) The machine no longer needs energy</li><li>D) The powder automatically becomes liquid resin</li></ul><div class="answer">الإجابة: A) Distribution and dispersion become harder to control</div></div>
+        <div class="question">39. For the conventional laser-based powder approach described, the laser provides energy to: <ul class="options"><li>A) Raise powder temperature sufficiently to melt it</li><li>B) Cut a paper sheet only</li><li>C) Create the original CAD model</li><li>D) Wash away support material</li></ul><div class="answer">الإجابة: A) Raise powder temperature sufficiently to melt it</div></div>
+        <div class="question">40. The lecture notes that polymer powders used in this approach must exhibit: <ul class="options"><li>A) Thermoplastic behavior</li><li>B) Magnetic behavior only</li><li>C) Electrical insulation in every case</li><li>D) Transparency</li></ul><div class="answer">الإجابة: A) Thermoplastic behavior</div></div>
+        <div class="question">41. Why is thermoplastic behavior useful for layer bonding in powder systems? <ul class="options"><li>A) The material can be melted and re-melted to permit bonding between layers</li><li>B) It eliminates the need for material</li><li>C) It converts the powder into CAD data</li><li>D) It prevents all heat transfer</li></ul><div class="answer">الإجابة: A) The material can be melted and re-melted to permit bonding between layers</div></div>
+        <div class="question">42. Which company is associated in the lecture with the EOSINT process family? <ul class="options"><li>A) EOS</li><li>B) Helisys</li><li>C) Stratasys</li><li>D) Cubital</li></ul><div class="answer">الإجابة: A) EOS</div></div>
+        <div class="question">43. Which company is associated with FDM in the lecture? <ul class="options"><li>A) Stratasys</li><li>B) EOS</li><li>C) Helisys</li><li>D) Optomec</li></ul><div class="answer">الإجابة: A) Stratasys</div></div>
+        <div class="question">44. The FDM process uses an extrusion technique to deliver material through a: <ul class="options"><li>A) Nozzle</li><li>B) Milling spindle</li><li>C) Casting gate</li><li>D) Grinding wheel</li></ul><div class="answer">الإجابة: A) Nozzle</div></div>
+        <div class="question">45. Why can two extrusion heads be used in FDM? <ul class="options"><li>A) A second material can form support structures to aid cleanup</li><li>B) One head creates the CAD file</li><li>C) One head removes all layers</li><li>D) Both heads are required to form STL triangles</li></ul><div class="answer">الإجابة: A) A second material can form support structures to aid cleanup</div></div>
+        <div class="question">46. The lecture describes the Thermojet process as depositing: <ul class="options"><li>A) Wax through droplet-based printing heads</li><li>B) Powder with a milling cutter</li><li>C) Paper sheets with a drill</li><li>D) Metal through a forging die</li></ul><div class="answer">الإجابة: A) Wax through droplet-based printing heads</div></div>
+        <div class="question">47. Why is Thermojet described as not widely used? <ul class="options"><li>A) Wax materials are difficult and fragile to handle</li><li>B) It cannot deposit material</li><li>C) It only makes STL files</li><li>D) It requires no heat</li></ul><div class="answer">الإجابة: A) Wax materials are difficult and fragile to handle</div></div>
+        <div class="question">48. Existing Thermojet machines are commonly used for: <ul class="options"><li>A) Investment casting patterns</li><li>B) Road paving</li><li>C) Gear hobbing</li><li>D) Deep drawing</li></ul><div class="answer">الإجابة: A) Investment casting patterns</div></div>
+        <div class="question">49. LOM sheet layers were bonded using: <ul class="options"><li>A) Heat-activated resin coated on one paper surface</li><li>B) A UV laser curing liquid resin only</li><li>C) A forging press only</li><li>D) A powder roller without bonding</li></ul><div class="answer">الإجابة: A) Heat-activated resin coated on one paper surface</div></div>
+        <div class="question">50. In LOM, a hatch pattern is cut into excess material to: <ul class="options"><li>A) Help remove waste and reveal the part</li><li>B) Create the resin vat</li><li>C) Control the laser wavelength</li><li>D) Determine the material's density</li></ul><div class="answer">الإجابة: A) Help remove waste and reveal the part</div></div>
+        <div class="question">51. The lecture's stereolithography description mentions a computer-controlled moving: <ul class="options"><li>A) Laser beam</li><li>B) Milling cutter</li><li>C) Welding electrode</li><li>D) Press ram</li></ul><div class="answer">الإجابة: A) Laser beam</div></div>
+        <div class="question">52. The SLA laser is aimed at the surface of: <ul class="options"><li>A) Liquid thermoset resin</li><li>B) A continuous paper roll</li><li>C) Loose metal chips</li><li>D) A solid steel billet</li></ul><div class="answer">الإجابة: A) Liquid thermoset resin</div></div>
+        <div class="question">53. In the SLA sequence described, what is drawn first? <ul class="options"><li>A) The layers of the support structures, followed by the part</li><li>B) The part's final paint layer</li><li>C) The packaging layout</li><li>D) The CNC tool path for milling</li></ul><div class="answer">الإجابة: A) The layers of the support structures, followed by the part</div></div>
+        <div class="question">54. After one SLA layer is imaged, the build platform: <ul class="options"><li>A) Shifts down</li><li>B) Is permanently removed</li><li>C) Turns into the resin</li><li>D) Moves to the CNC machine</li></ul><div class="answer">الإجابة: A) Shifts down</div></div>
+        <div class="question">55. What does the recoating bar do in the SLA description? <ul class="options"><li>A) Applies the next layer of resin</li><li>B) Removes all supports automatically</li><li>C) Measures UTS</li><li>D) Cuts the final part from a sheet</li></ul><div class="answer">الإجابة: A) Applies the next layer of resin</div></div>
+        <div class="question">56. Which combination is explicitly associated with SLA's potential output quality in the lecture material? <ul class="options"><li>A) Fine feature resolution and good surface finish</li><li>B) Unlimited build size and zero cost</li><li>C) No need for supports or post-processing in all cases</li><li>D) Identical properties for every resin</li></ul><div class="answer">الإجابة: A) Fine feature resolution and good surface finish</div></div>
+
+        <h3>True or False</h3>
+        <div class="question">1. AM and CNC machining differ in whether material is added or removed. <div class="answer">الإجابة: True</div></div>
+        <div class="question">2. The lecture lists programming and environmental friendliness among comparison dimensions for AM and CNC. <div class="answer">الإجابة: True</div></div>
+        <div class="question">3. STL triangles should have correctly oriented surface normals. <div class="answer">الإجابة: True</div></div>
+        <div class="question">4. An STL file can contain errors that are difficult to detect in complex models. <div class="answer">الإجابة: True</div></div>
+        <div class="question">5. More than one part can be arranged in an AM machine for a build. <div class="answer">الإجابة: True</div></div>
+        <div class="question">6. Every AM machine uses exactly the same setup parameters. <div class="answer">الإجابة: False</div></div>
+        <div class="question">7. A machine may produce a part even when an incorrect setup procedure was used. <div class="answer">الإجابة: True</div></div>
+        <div class="question">8. The build cycle may stop when the source material runs out. <div class="answer">الإجابة: True</div></div>
+        <div class="question">9. All AM parts are guaranteed to meet standard material specifications simply because the build finished. <div class="answer">الإجابة: False</div></div>
+        <div class="question">10. The lecture's timeline places the first commercial laser in 1960. <div class="answer">الإجابة: True</div></div>
+        <div class="question">11. Powder particle distribution and dispersion can become difficult to control when particles are too small. <div class="answer">الإجابة: True</div></div>
+        <div class="question">12. Thermoplastic polymer powders can be melted and re-melted to help bond layers. <div class="answer">الإجابة: True</div></div>
+        <div class="question">13. The lecture associates EOSINT with EOS. <div class="answer">الإجابة: True</div></div>
+        <div class="question">14. Thermojet deposits wax through droplet-based printing heads. <div class="answer">الإجابة: True</div></div>
+        <div class="question">15. LOM bonds paper layers using heat-activated resin. <div class="answer">الإجابة: True</div></div>
+        <div class="question">16. The LOM hatch pattern is intended to make the waste easier to separate from the part. <div class="answer">الإجابة: True</div></div>
+        <div class="question">17. In SLA, a recoating bar applies the next layer of resin. <div class="answer">الإجابة: True</div></div>
+        <div class="question">18. SLA begins by drawing the part itself before drawing support structures, according to the lecture's description. <div class="answer">الإجابة: False</div></div>
+        <div class="question">19. Internal voids may contribute to failure under mechanical stress. <div class="answer">الإجابة: True</div></div>
+
+        <h3>Fill in the Blanks</h3>
+        <div class="question">1. The AM-versus-CNC comparison includes materials, speed, ease of use, accuracy, size limitations, geometric complexity, programming, cost, and environmental __________. <div class="answer">الإجابة: friendliness</div></div>
+        <div class="question">2. An STL surface is approximated by triangular __________. <div class="answer">الإجابة: facets</div></div>
+        <div class="question">3. The direction of an STL triangle's surface normal helps distinguish the inside from the __________ of a part. <div class="answer">الإجابة: outside</div></div>
+        <div class="question">4. Software used to correct defects in an STL file is called STL file __________ software. <div class="answer">الإجابة: repair</div></div>
+        <div class="question">5. During file manipulation, a user may change the part's position or __________ in the build area. <div class="answer">الإجابة: orientation</div></div>
+        <div class="question">6. Saved machine setups can help prevent __________ during preparation. <div class="answer">الإجابة: mistakes</div></div>
+        <div class="question">7. The build stage includes material deposition and layer cross-section __________. <div class="answer">الإجابة: formation</div></div>
+        <div class="question">8. A part may need to be separated from its build __________ after fabrication. <div class="answer">الإجابة: platform</div></div>
+        <div class="question">9. The first commercial liquid-photopolymer system named in the lecture is __________. <div class="answer">الإجابة: Stereolithography (SLA)</div></div>
+        <div class="question">10. The powder-based laser approach raises powder temperature sufficiently to __________ it. <div class="answer">الإجابة: melt (or sinter)</div></div>
+        <div class="question">11. Powder particles are preferably controlled in size and __________. <div class="answer">الإجابة: shape</div></div>
+        <div class="question">12. The lecture associates FDM with the company __________. <div class="answer">الإجابة: Stratasys</div></div>
+        <div class="question">13. Thermojet deposits __________ through droplet-based heads. <div class="answer">الإجابة: wax</div></div>
+        <div class="question">14. LOM layers are bonded by heat-activated __________. <div class="answer">الإجابة: resin</div></div>
+        <div class="question">15. In SLA, a recoating bar spreads the next layer of liquid __________. <div class="answer">الإجابة: resin</div></div>
+    </div>
+
+    <script>
+        function showSheet(sheetNum) {
+            // إخفاء كل الشيتات
+            const sections = document.querySelectorAll('.sheet-section');
+            sections.forEach(sec => sec.classList.remove('active'));
+
+            // إظهار الشيت المطلوب فقط
+            const targetSheet = document.getElementById('sheet' + sheetNum);
+            if (targetSheet) {
+                targetSheet.classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+</html>
